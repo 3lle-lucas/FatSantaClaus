@@ -1,5 +1,8 @@
 # FatSantaClaus🎅🏼
 
+![FatSantaClaus](https://github.com/user-attachments/assets/48dc9756-23a7-421c-94c2-35ff80e87ad7)
+
+
 A tool to harvest cookies using Chromium Debug Mode and Discord to exfiltrate them. Built for **security research** and **educational purposes only**, not for shady stuff.
 Second module of the final project, the functions are more defined and granular to allow you to add them easily to your own projects.
 
