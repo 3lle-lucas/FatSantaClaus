@@ -1,6 +1,6 @@
 # FatSantaClaus🎅🏼
 
-A tool to get cookies using chromium debug mode and Discord to exfiltrate them. Built for **security research** and **educational purposes only**, not for shady stuff.
+A tool to harvest cookies using Chromium Debug Mode and Discord to exfiltrate them. Built for **security research** and **educational purposes only**, not for shady stuff.
 Second module of the final project, the functions are more defined and granular to allow you to add them easily to your own projects.
 
 # Demo👀
@@ -26,6 +26,8 @@ Doc: https://discord.com/developers/docs/change-log#default-file-upload-limit-ch
 - It creates a file on the host system with the cookies (not encrypted) and upload it to a Discord webhook.
 
 - It removes the file (We like clean works)
+
+- I will write on my website lucasquintao.it an article with more details about how this tool work and also about the new feature that are being developed (Device Bound Session Credentials) to make this tool useless.
 
 # Improvements 🙏🏼
 Adding the flag **--headless** you can start the debug mode without opening the GUI of the browser but the cookies don't get loeaded so you dump nothing.
